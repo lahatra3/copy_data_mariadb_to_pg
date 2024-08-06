@@ -1,6 +1,6 @@
 # copy_data_mariadb_to_pg
 
-- Before running, configure ***.env*** file
+- Before running, configure ***.env*** file in ***local*** directory
 
 ```bash
     $ ~ git clone https://github.com/lahatra3/copy_data_mariadb_to_pg.git
