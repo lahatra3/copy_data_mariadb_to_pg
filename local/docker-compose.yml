@@ -1,0 +1,21 @@
+services:
+  copy_data_mariadb_to_pg:
+    build: ../
+    container_name: copy_data_mariadb_to_pg
+    environment:
+      MARIADB_HOST: ${MARIADB_HOST}
+      MARIADB_PORT: ${MARIADB_PORT}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_TABLE: ${MARIADB_TABLE}
+      PG_HOST: ${PG_HOST}
+      PG_PORT: ${PG_PORT}
+      PG_USER: ${PG_USER}
+      PG_PASSWORD: ${PG_PASSWORD}
+      PG_DATABASE: ${PG_DATABASE}
+      PG_TABLE: ${PG_TABLE}
+    networks:
+      - lahatrad_network
+networks:
+  lahatrad_network:

@@ -1,0 +1,16 @@
+{
+  "name": "copy_data_mariadb_to_pg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.mjs",
+  "scripts": {
+    "start": "node main.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mariadb": "^3.3.1",
+    "pg": "^8.12.0"
+  }
+}
